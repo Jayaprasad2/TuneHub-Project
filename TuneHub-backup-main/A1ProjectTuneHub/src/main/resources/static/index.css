@@ -1,0 +1,104 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh; /* Set the body height to the full viewport height */
+    background-color: #00DBDE;
+    background-image: linear-gradient(90deg, #00DBDE 0%, #FC00FF 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    height: 60px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000; /* Ensure the header is above other content */
+}
+
+.left{
+	display: flex;
+}
+
+.logo {
+    height: 40px;
+    border-radius: 80px;
+    margin-right: 10px;
+    border: solid;
+    border-width: 2px;
+    /*border-color:#00DBDE;*/
+}
+
+.name {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 4px;
+    margin-left: 10px;
+    font-weight: bold;
+    font-size: 30px;
+    color:#00DBDE;
+    align-items: center;
+}
+
+.signin,
+.signup {
+    color: white;
+    padding: 10px;
+    margin: 10px;
+    border: solid;
+    border-radius: 30px;
+    font-size: medium;
+    background-color: rgb(166, 0, 166);
+}
+
+.signin:active,
+.signup:active {
+    opacity: 0.5;
+}
+
+.indexdiv {
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.login1,.register1{
+	color: white;
+	font-weight: bold;
+}
+
+.login,
+.register {
+    border: solid;
+    color: white;
+    background-color: transparent;
+    border-color: white;
+    border-width: 1px;
+    font-weight: bold;
+    font-size: larger;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin: 10px;
+}
+
+.login:hover,
+.register:hover {
+    background-color: white;
+    color: black;
+}

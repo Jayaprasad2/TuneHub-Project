@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Admin Workspace</title>
+<link rel="stylesheet" type="text/css" th:href="@{/adminhome.css}">
+</head>
+<body>
+	<header>
+		<div class="left">
+			<img class="logo" src="/images/tunehublogo.jpeg" alt="Logo">
+			<h1 class="th">TUNEHUB</h1>
+		</div>
+		<div class="right">
+			<form action="logout">
+				<input class="logout" type="submit" value="LOGOUT">
+			</form>
+		</div>
+	</header>
+	
+	<div class="content">
+		<h1><u>Admin Dashboard</u></h1>
+		<p>Welcome to the admin panel. Use the following options to manage your music collection:</p>
+		<br><br>
+		<div class="options">
+			<form action="newsong">
+				<input type="submit" value="ADD SONGS">
+			</form>
+		
+			<form action="viewsongs">
+				<input type="submit" value="VIEW SONGS">
+			</form>
+		
+			<form action="createplaylists">
+				<input type="submit" value="CREATE PLAYLIST">
+			</form>
+		
+			<form action="viewplaylists">
+				<input type="submit" value="VIEW PLAYLISTS">
+			</form>
+		</div>
+		<br>
+	</div>
+
+</body>
+</html>

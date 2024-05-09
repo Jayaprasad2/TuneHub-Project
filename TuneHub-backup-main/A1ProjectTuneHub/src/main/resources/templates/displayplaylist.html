@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>view playlist-admin</title>
+<link rel="stylesheet" type="text/css" th:href="@{/displayplaylist.css}">
+</head>
+<body>
+	<div class="displayplaylists">
+		<h2><u>Welcome Admin!</u></h2>
+    	<p>You are currently viewing the playlists.</p>
+	
+		<div class="table">	
+	    	<table border="1">
+				<thead>
+					<tr>
+						<th>Id</th>
+						<th>Playlist_Name</th>
+						<th>Songs</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr th:each="all:${allplaylist}">
+					<td th:text="${all.id}"></td>
+					<td th:text="${all.name}"></td>
+					<td>
+						<ul>
+							<li th:each="song:${all.songs}">
+								<span th:text="${song.name}"></span>
+				
+								<audio controls>
+									<source th:src="${song.link}">
+								</audio>
+								
+							</li>	
+						</ul>
+					</td>
+					
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<p class="link">Click <a href="createplaylists">HERE </a>to add more Playlists</p>
+
+	</div>
+	
+</body>
+</html>
